@@ -3,6 +3,7 @@
 import java.util.*;
 
 public class InsertIntervals {
+    // First Practice
     public static int[][] intervals(int[][] intervals, int[] newIntervals) {
         List<int[]> result = new ArrayList<>();
 
@@ -22,6 +23,8 @@ public class InsertIntervals {
         return result.toArray(new int[result.size()][]);
     }
 
+    // Second practice
+     
     public static void main(String[] args) {
         int[][] intervals = { { 1, 3 }, { 6, 9 } };
         int[] newIntervals = { 2, 5 };
