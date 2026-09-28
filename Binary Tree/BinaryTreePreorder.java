@@ -63,3 +63,28 @@ public class BinaryTreePreorder {
         preorder(root);
     }
 }
+
+// bottom print levewise travesal
+
+// class Solution {
+// public List<List<Integer>> levelOrderBottom(TreeNode root) {
+// List<List<Integer>> ans = new ArrayList<>();
+
+// helper(root, 0, ans);
+
+// Collections.reverse(ans);
+
+// return ans;
+// }
+// public static void helper(TreeNode root, int level, List<List<Integer>> ans)
+// {
+// if(root == null) return;
+// if(ans.size() == level) {
+// ans.add(new ArrayList<>());
+// }
+
+// ans.get(level).add(root.val);
+// helper(root.left, level + 1, ans);
+// helper(root.right, level +1, ans);
+// }
+// }
